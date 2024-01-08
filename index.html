@@ -7,29 +7,28 @@
   <link rel="stylesheet" href="style.css" media="screen">
 </head>
 
-<body>
+<body class="page">
   <header class="aaa">
     <img src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
     <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">
-      <h1>Want more details?</h1>
+      <h1 class="header__title">Want more details?</h1>
     </a>
   </header>
   <main class="centered-main-page-element">
     <form id="topSectionForAddingElementToList">
-      <label for="new-task">Add Item</label>
+      <label class="title newtitle" for="new-task">Add Item</label>
       <fieldset class="task-row-wrapper">
-        <input id="new-task" class="task" type="text" required>
-        <!-- Добавлен атрибут required для обязательного заполнения поля -->
-        <button type="submit">Add</button> <!-- Указан тип кнопки как submit для отправки формы -->
+        <input id="new-task" class="new-task text" type="text" required>
+        <button class="add" type="submit">Add</button>
       </fieldset>
     </form>
     <section>
-      <h2>Todo</h2>
-      <ul id="incompleteTasks">
+      <h2 class="title">Todo</h2>
+      <ul id="incompleteTasks" class="incompleteTasks">
         <li>
           <input type="checkbox">
           <label class="task">Pay Bills</label>
-          <input type="text" class="task">
+          <input type="text" class="task text">
           <button class="edit">Edit</button>
           <button class="delete">
             <img src="./remove.svg" alt="Remove">
@@ -38,7 +37,7 @@
         <li class="editMode">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
+          <input type="text" value="Go Shopping" class="task text">
           <button class="edit">Save</button>
           <button class="delete">
             <img src="./remove.svg" alt="Remove">
@@ -48,8 +47,8 @@
     </section>
   </main>
   <footer class="centered-main-page-element">
-    <h2>Completed</h2>
-    <ul id="completed-tasks">
+    <h2 class="title">Completed</h2>
+    <ul id="completed-tasks" class="completed-tasks">
       <li>
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
